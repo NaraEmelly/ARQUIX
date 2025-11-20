@@ -1,25 +1,27 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
 
 /*ESTILO GLOBAL */
 body.dark-bg {
-    background-image: url('../assets/img/fundo.png');
-
+    background-image: url('../assets/img/background_mario.gif'); 
+    background-color: rgb(119, 69, 189), ;
+    color: #ffeaf6dc;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    min-height: vh;
     background-repeat: no-repeat;
-
-    color: #eaeaea;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Tiny5", sans-serif; 
+    font-weight: 400;
+    font-style:normal;
+
 }
 
 .rodape {
-    background-color: rgba(137, 43, 226, 0.489);
-    color: black;
-    font-family: monospace;
-    margin-left: auto;
-    padding: auto;
+    background-color:rgb(6, 0, 50);
+    color: #72696e;
+    padding: 1vw;
     text-align: center;
 }
 
@@ -42,7 +44,7 @@ body.dark-bg {
 }
 
 .nav-link {
-    color: aliceblue;
+    color: rgba(246, 77, 232, 0.67);
     padding: 15px 30px;
     font-family: sans-serif;
     padding: 13px 23px;
@@ -68,7 +70,7 @@ body.dark-bg {
 }
 
 .hero-container h2 {
-    font-size: 42px;
+    font-size: 5.8vw;
     margin-bottom: 15px;
 }
 
@@ -82,6 +84,7 @@ body.dark-bg {
     font-weight: bold;
     transition: 0.3s;
 
+
 }
 
 .btn-primary:hover {
@@ -93,7 +96,7 @@ body.dark-bg {
     border: 1px solid #444;
     padding: 10px 20px;
     border-radius: 6px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -103,7 +106,7 @@ body.dark-bg {
 
 /*FORMULÁRIOS*/
 .form-box {
-    width: 350px;
+    width: 390px;
     padding: 50px;
     margin: 90px auto;
     text-align: auto;
@@ -112,34 +115,36 @@ body.dark-bg {
 
 .input-dark {
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid #333;
+    border: 1px solid #3333335d;
     padding: 12px;
-    width: 93% ;
-    
+    width: 93%;
     border-radius: 6px;
-    color: white;
+    color: rgba(151, 25, 124, 0.697);
     margin: 10px 0;
     position: center;
-    margin-top: 25px;
+    margin-top: 2%;
 }
 
-/* Título DASHBOARD */
-.title-dash{
-    text-align: center;
-    margin: 78px;
-    
-}
+
 
 /* DASHBOARD  */
 .dashboard-area {
-    padding: 90px;
-    display:grid;
+    padding: 30px;
+    display: grid;
     gap: 40px;
-    width: 79%;
-    height: 600px;
-    margin-top: 12px;
-    
+    width: 76%;
+    height: 1px;
+    grid: template columns 39px;
+    position: center;
 }
+
+/* Título DASHBOARD */
+#title-dash {
+    text-align:left ;
+    font-weight: 50;
+    font-size: 4.4px;
+}
+
 .livro-item {
     background: #10103d;
     padding: 62px;
