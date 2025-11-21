@@ -1,0 +1,64 @@
+<!-- Prateleira de livros fixados -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estante - ArquixLeia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shelf.css">
+</head>
+
+<body class="dark-bg">
+
+  <!-- NAVBAR IGUAL AO DASHBOARD -->
+  <header class="navbar glass">
+    <h1 class="logo">ARQUIX<span>Leia</span></h1>
+    <nav>
+      <a href="index.html" class="nav-link">Início</a>
+    </nav>
+  </header>
+
+  <section class="shelf-container">
+
+    <h1 class="shelf-title">NOSSA ESTANTE</h1>
+
+    <!-- PRATELEIRA -->
+    <div class="shelf glass">
+
+      <!-- Livro 1 -->
+      <div class="book-card">
+        <img src="img/livro1.jpg" class="book-cover" data-pdf="https://drive.google.com/file/d/ID_DO_PDF_1/preview"
+          alt="Livro 1">
+        <p>Livro 1</p>
+      </div>
+
+      <!-- Livro 2 -->
+      <div class="book-card">
+        <img src="img/livro2.jpg" class="book-cover"
+          data-pdf="https://drive.google.com/file/d/12JFIZqNA7L8O_ljeTK3loj_1ne9eGzg9/view?usp=drive_link"
+          alt="Livro 2">
+        <p>Livro 2</p>
+      </div>
+
+      <!-- Livro 3 -->
+      <div class="book-card">
+        <img src="img/livro3.jpg" class="book-cover" data-pdf="https://drive.google.com/file/d/ID_DO_PDF_3/preview"
+          alt="Livro 3">
+        <p>Livro 3</p>
+      </div>
+
+    </div>
+
+    <!-- LEITOR (IFRAME) -->
+    <div class="viewer glass">
+      <iframe id="pdf-viewer" src="" allow="fullscreen"></iframe>
+    </div>
+
+  </section>
+
+  <script src="js/shelf.js"></script>
+</body>
+
+</html>
