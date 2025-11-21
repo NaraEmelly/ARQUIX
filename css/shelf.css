@@ -1,0 +1,69 @@
+.shelf-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.shelf-title {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.shelf {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    text-align: center;
+    width: 150px;
+}
+
+.book-cover {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.book-cover:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.18);
+}
+
+.viewer {
+    width: 94.9%;
+    height: 170vh;
+    padding: 20px;
+    border-radius: 12px;  
+}
+
+#pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #000; 
+}
+
+@media (max-width: 768px) {
+    .shelf {
+        gap: 20px;
+    }
+
+    .book-cover {
+        width: 120px;
+        height: 180px;
+    }
+
+    .book-card {
+        width: 120px;
+    }
+}
